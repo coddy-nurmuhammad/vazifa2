@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+      $(".yozuv1").click(function(){
+      	$("p").css({"font-size":"25px"});
+      	$(".collar").addClass("col-lg-12");
+
+      })
+
+      $(".yozuv2").click(function(){
+      	$("p").css({"font-size":"7px"});
+      	$(".collar").removeClass("col-lg-12");
+      	$(".collar").addClass("col-lg-6");
+
+      })
+
+      $(".yozuv3").click(function(){
+      	$("p").css({"font-size":"12px"});
+      	$(".collar").removeClass("col-lg-12");
+        $(".collar").removeClass("col-lg-6");
+        $(".collar").addClass("col-lg-4");
+      })
+      $(".yozuv4").click(function(){
+      	$("p").css({"font-size":"12px"});
+        $(".collar").removeClass("col-lg-12");
+        $("collar").removeClass("col-lg-6");
+        $("collar").removeClass("col-lg-4");
+        $("collar").addClass("col-lg-3");
+
+        	$("img").css({"display":"none"});
+      })
+
+      $(".a1").click(function(){
+      	$(".a1").removeClass("active");
+      	$(this).addClass("active");
+      })
+      $(".a2").click(function(){
+      	$(".a2").removeClass("active");
+      	$(this).addClass("active");
+      })
+      $(".a3").click(function(){
+      	$(".a3").removeClass("active");
+      	$(this).addClass("active");
+      })
+      $(".a4").click(function(){
+      	$(".a4").removeClass("active");
+      	$(this).addClass("active");
+      })
+
+ 	  $(".rasm1").click(function(){
+ 	  	$("img").css({"display":"none"});
+ 	  	$(".collar").addClass("col-lg-12");
+ 	  	$("p").css({"font-size":"25px"});
+ 	  })
+
+ 	  $(".rasm2").click(function(){
+ 	  	$("img").css({"display":"block"});
+ 	  	$(".collar").removeClass("col-lg-12");
+ 	  	$("p").css({"font-size":"16px"});
+ 	  
+ 	  })
+ 		
+ 		$(".rang1").click(function(){
+ 			$("body").css({"filter":"grayscale(100%)"});
+ 		})
+
+        $(".rang2").click(function(){
+        	$("body").css({"filter":"grayscale(0%)"});
+        })
+
+        $(".fon1").click(function(){
+        	$(".sa").attr("src","1.jpg");
+        })
+
+
+        $(".fon2").click(function(){
+        	$(".sa").attr("src","2.jpg");
+        })
+
+
+        $(".fon3").click(function(){
+        	$(".sa").attr("src","3.jpg");
+        })
+
+
+        $(".fon4").click(function(){
+        	$(".sa").attr("src","4.jpg");
+        })
+
+        
+	})
+	</script>
+</head>
+<body>
+    <div class="container">
+      <div class="row" style="padding:10px;border-bottom:1px solid orange;">
+	      	<div class="col-lg-12">
+		      	<a href="#" class="yozuv1 a1">C1 </a>
+		      	<a href="#" class="yozuv2 a2">C2</a>
+		      	<a href="#" class="yozuv3 a3">C3</a>
+		      	<a href="#" class="yozuv4 a4">C4</a>
+
+		      	<a href="#" class="rasm1">Image off</a>
+		      	<a href="#" class="rasm2">Image on</a>
+		      	<a href="#" class="rang1 rang"></a>
+		      	<a href="#" class="rang2 rang"></a>
+	      	</div>
+      </div>
+      <div class="row">
+	      	<div class="col-lg-6 collar">
+	      		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	      		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	      		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	      		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	      		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	      		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	      		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	      		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	      		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	      		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	      		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	      	</div>
+	      	<div class="col-lg-6">
+	      		<img src="1.jpg" class="img-thumbnail sa">
+	      	</div>
+      </div> 
+      <div class="row">
+	      	<div class="col-lg-6 collar">
+	      		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	      		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	      		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	      		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	      		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	      		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	      		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	      		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	      		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	      		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	      		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	      	</div>
+	      	<div class="col-lg-6">
+	      		<img src="1.jpg" class="img-thumbnail sa">
+	      	</div>
+      </div>
+	      <div class="row">
+		      	<div class="col-lg-6 collar">
+		      		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		      		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		      		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		      		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		      		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		      		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		      		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		      		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		      		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		      		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		      		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		      	</div>
+		      	<div class="col-lg-6">
+		      		<img src="1.jpg" class="img-thumbnail sa">
+		      	</div>
+	      </div>
+	      <div class="row">
+	      	 <div class="col-lg-1">
+	      	 	<img src="1.jpg" class="img-thumbnail fon1">
+	      	 </div>
+	      	 <div class="col-lg-1">
+	      	 	<img src="2.jpg" class="img-thumbnail fon2">
+	      	 </div>
+	      	 <div class="col-lg-1">
+	      	 	<img src="3.jpg" class="img-thumbnail fon3">
+	      	 </div>
+	      	 <div class="col-lg-1">
+	      	 	<img src="4.jpg" class="img-thumbnail fon4">
+	      	 </div>
+	      </div>
+      </div>
+
+    </div>
+    
+</body>
+</html>
